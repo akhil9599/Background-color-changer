@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background-Changer</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 20px 100px;
+        }
+
+        h1{
+            display:flex;
+            
+            justify-content: center;
+        }
+        img{
+            height:auto; 
+            width:100%;
+            margin: 0 auto;
+        }
+        p{
+            font-size: 18px;
+            text-align: justify;
+        }
+        .btn{
+            width: 25px;
+           height: 25px;
+           display: inline-block;
+           margin: 5px;
+           border-radius: 50%;
+           cursor: pointer;
+        }
+        #white{
+            background-color: white;
+        }
+        #gray{
+       background-color: gray;
+        }
+        #blue{
+        background-color: greenyellow;
+        }
+        #voilet{
+         background-color: violet;
+        }
+        #black{
+            background-color: black;
+        }
+        #color-switcher{
+            display: flex;
+            justify-content: right;
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <div id="color-switcher">
+        <span id="white" class="btn" onclick="handleClick('#FFFFFF')"></span>
+        <span id="gray" class="btn" onclick="handleClick('#808080')"></span>
+        <span id="blue" class="btn" onclick="handleClick('#9ACD32')"></span>
+        <span id="voilet" class="btn" onclick="handleClick('#8F00FF')"></span>
+        <span id="black" class="btn" onclick="handleClick('#000000')"></span>
+    </div>
+    <h1 class="txt">About-us</h1>
+    <img src="images/img1.jpg" alt="img"  >
+    <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, nostrum fuga dolores, modi tempore amet tempora blanditiis sapiente exercitationem possimus magnam delectus explicabo, vero perferendis. Illum nesciunt animi perferendis aut! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quae ab veniam repellendus. Fuga illo ab architecto alias iste cupiditate quisquam expedita temporibus iusto repellat nobis ad labore, incidunt asperiores?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolores recusandae doloremque minima veniam corrupti laboriosam tempora asperiores voluptate. Sequi, iure sint necessitatibus ex eum quo nobis similique nulla nihil?Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sed suscipit modi error similique incidunt consectetur delectus? Odio quasi esse possimus dolorem, molestias iure! Totam corrupti enim consectetur minima non?lorm Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptatem perspiciatis dolorum ullam incidunt quo quasi inventore, suscipit velit maxime illo animi autem at impedit sint dicta! Sint, quae laboriosam. 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, nostrum fuga dolores, modi tempore amet tempora blanditiis sapiente exercitationem possimus magnam delectus explicabo, vero perferendis. Illum nesciunt animi perferendis aut! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quae ab veniam repellendus. Fuga illo ab architecto alias iste cupiditate quisquam expedita temporibus iusto repellat nobis ad labore, incidunt asperiores?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolores recusandae doloremque minima veniam corrupti laboriosam tempora asperiores voluptate. Sequi, iure sint necessitatibus ex eum quo nobis similique nulla nihil?Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sed suscipit modi error similique incidunt consectetur delectus? Odio quasi esse possimus dolorem, molestias iure! Totam corrupti enim consectetur minima non?lorm Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptatem perspiciatis dolorum ullam incidunt quo quasi inventore, suscipit velit maxime illo animi autem at impedit sint dicta! Sint, quae laboriosam. 
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, nostrum fuga dolores, modi tempore amet tempora blanditiis sapiente exercitationem possimus magnam delectus explicabo, vero perferendis. Illum nesciunt animi perferendis aut! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quae ab veniam repellendus. Fuga illo ab architecto alias iste cupiditate quisquam expedita temporibus iusto repellat nobis ad labore, incidunt asperiores?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolores recusandae doloremque minima veniam corrupti laboriosam tempora asperiores voluptate. Sequi, iure sint necessitatibus ex eum quo nobis similique nulla nihil?Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sed suscipit modi error similique incidunt consectetur delectus? Odio quasi esse possimus dolorem, molestias iure! Totam corrupti enim consectetur minima non?lorm Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptatem perspiciatis dolorum ullam incidunt quo quasi inventore, suscipit velit maxime illo animi autem at impedit sint dicta! Sint, quae laboriosam. 
+    </p>
+    <script>
+        const handleClick=(color)=> {
+         document.body.style.backgroundColor= color;
+         let txt=document.getElementsByClassName("txt");
+         if(color=="#000000"){
+            for(let key of txt){
+                key.style.color="#FFFFFF"
+            }
+
+         }else{
+            for(let key of txt){
+                key.style.color="#000000"
+            }
+         }
+        }
+    </script>
+</body>
+</html>
